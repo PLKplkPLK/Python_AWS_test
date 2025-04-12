@@ -39,7 +39,7 @@ Arguments were just not in the correct order.
 
 - print number of people at the end
 
-added a loop to iterate over threads and wait for them to finish with `threading.Thread.join()` method
+Added a loop to iterate over threads and wait for them to finish with `threading.Thread.join()` method
 
 
 ## AWS Lambda
