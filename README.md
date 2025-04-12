@@ -17,3 +17,21 @@
 7. @staticmethod receives only explicitly given arguments, while @classmethod receives class object as well. Static methods don't have to be created inside a class, but we might want to have them there, because it's logically correct (for it to be encapsulated there).
 
 8. It automatically closes file at the end of execution.
+
+
+## Python code fixing
+
+- if __name__ == "__main__"
+It just... it should be "__main__", not "main"
+
+- self.age = age
+Instead of self.age == age, because that's not assigning, that's a check whether they're the same (and since that's a constructor, they won't be)
+
+- increase_count() changed to 2 different methods: increase and get
+I just thought it would be easier to use it like that - KISS
+
+- x = Person(p["first_name"], p["last_name"], p["age"])
+Arguments were just not in the correct order.
+
+- print number of people at the end
+added a loop to iterate over threads and wait for them to finish with threading.Thread.join() method
